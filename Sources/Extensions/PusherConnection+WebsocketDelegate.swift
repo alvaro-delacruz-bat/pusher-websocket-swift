@@ -249,7 +249,7 @@ extension PusherConnection: WebSocketConnectionDelegate {
         }
     }
 
-    public func webSocketStateDidChange(connection: NWWebSocket.WebSocketConnection, state: NWConnection.State) {
+    public func webSocketStateDidChange(connection: WebSocketConnection, state: NWConnection.State) {
         Logger.shared.debug(for: .connectionState,
                             context: """
             State: \(state)
