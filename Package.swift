@@ -9,7 +9,7 @@ let package = Package(
         .library(name: "PusherSwift", targets: ["PusherSwift"])
     ],
     dependencies: [
-        .package(url: "https://github.com/nocturnecity/NWWebSocket", .branch("test")),
+        .package(url: "https://github.com/alvaro-delacruz-bat/NWWebSocket", .branch("test")),
         .package(url: "https://github.com/bitmark-inc/tweetnacl-swiftwrap", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
