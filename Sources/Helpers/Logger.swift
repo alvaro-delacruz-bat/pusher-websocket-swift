@@ -59,6 +59,10 @@ class Logger {
         case receivedMessage = "websocketDidReceiveMessage"
         case unableToHandleIncomingError = "Unable to handle incoming error"
         case unableToHandleIncomingMessage = "Unable to handle incoming Websocket message"
+
+        // Connection
+
+        case connectionState = "Connection state"
     }
 
     enum LoggingLevel: String {

@@ -248,4 +248,11 @@ extension PusherConnection: WebSocketConnectionDelegate {
             attemptReconnect()
         }
     }
+
+    public func webSocketStateDidChange(connection: NWWebSocket.WebSocketConnection, state: NWConnection.State) {
+        Logger.shared.debug(for: .connectionState,
+                            context: """
+            State: \(state)
+            """)
+    }
 }
